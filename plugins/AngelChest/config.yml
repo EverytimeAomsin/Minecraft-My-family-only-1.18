@@ -130,7 +130,7 @@ dont-protect-chest-if-player-died-in-pvp: false
 # When false, XP drops normally
 # When set to "nopvp", the XP is not collected if the player died during PvP.
 # PREMIUM FEATURE: ONLY AVAILABLE IN AngelChest Plus! (Free version always stores the vanilla XP amount)
-collect-xp: true
+collect-xp: false
 
 # Amount of XP the player keeps within their chest on death.
 # 1.0 = 100%, 0.5 = 50%, etc.
@@ -161,7 +161,7 @@ random-item-loss: 0
 
 # When set to true, the random-item-loss defined above will NOT apply to enchanted items!
 # That means that enchanted items will always be stored in the AngelChest regardless of random item loss chance.
-random-item-loss-ignores-enchanted-items: false
+random-item-loss-ignores-enchanted-items: true
 
 # When set to true, players will receive a message telling them where the AngelChest
 # is located, including clickable links to teleport, fetch or unlock the chest if
@@ -677,8 +677,9 @@ hologram-offset-per-line: 0.25
 
 # PREMIUM FEATURE: THE WHOLE GUI IS ONLY AVAILABLE IN AngelChestPlus!
 
-# When true, players can fast-loot the AngelChest using rightclick (or shift-rightclick, see option below)
-# When false, players cannot fast-loot and always get the GUI displayed when opening a chest
+# When set to true, players can fast-loot the AngelChest using rightclick (or shift-rightclick, see option below)
+# When set to false, players cannot fast-loot and always get the GUI displayed when opening a chest
+# When set to "force", players will always fast-loot chests and will never see the GUI.
 allow-fastlooting: true
 
 # When true, players can open the AngelChest GUI using shift-rightclick and fast-loot the chest via rightclick
@@ -1851,5 +1852,5 @@ debug: false
 verbose: false
 
 # NEVER CHANGE THE VALUES BELOW!
-plugin-version: 6.0.1
-config-version: 202112050500
+plugin-version: 6.1.1
+config-version: 202112112119
